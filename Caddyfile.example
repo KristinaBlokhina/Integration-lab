@@ -1,0 +1,4 @@
+# HTTPS автоматично. Замініть домен.
+lab.example.org {
+    reverse_proxy localhost:3000
+}

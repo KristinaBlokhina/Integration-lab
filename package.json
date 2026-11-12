@@ -1,0 +1,13 @@
+{
+  "name": "integration-lab",
+  "version": "1.0.0",
+  "description": "Integration Lab: інтерактивні консультації та інформаційний портал для українців у Румунії",
+  "private": true,
+  "license": "UNLICENSED",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server/index.js",
+    "dev": "node --watch --disable-warning=ExperimentalWarning server/index.js",
+    "test": "node --disable-warning=ExperimentalWarning --test test/e2e.test.js"
+  }
+}

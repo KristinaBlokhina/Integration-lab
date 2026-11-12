@@ -1,0 +1,16 @@
+environment:
+  DATA_DIR: /data
+  TRUST_PROXY: "1"
+services:
+  lab:
+    build: .
+    restart: unless-stopped
+    ports: ["3000:3000"]
+    volumes: ["lab-data:/data"]
+    environment:
+      DATA_DIR: /data  
+      TRUST_PROXY: "1"
+      # ADMIN_USERNAME: admin
+      # ADMIN_PASSWORD: change-me-please-long
+volumes:
+  lab-data:
